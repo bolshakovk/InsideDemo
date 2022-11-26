@@ -10,3 +10,6 @@
 http://localhost:8082/swagger-ui
 
 curl-запросы в curl-файле
+
+
+для запуска докер компоса: docker-compose up -d
