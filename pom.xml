@@ -112,6 +112,7 @@
     </dependencies>
 
     <build>
+        <finalName>inside-app</finalName>
         <plugins>
             <plugin>
                 <groupId>io.fabric8</groupId>
