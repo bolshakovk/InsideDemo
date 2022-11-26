@@ -1,0 +1,13 @@
+curl -X POST http://localhost:8082/api/auth/signin
+    -H 'Content-Type: application/json'
+    -d '{"login":"my_login","password":"my_password"}'
+    
+curl -X POST http://localhost:8082/api/authsignup
+    -H 'Content-Type: application/json'
+    -d '{"login":"my_login","password":"my_password", "role": "user_role"}'
+
+curl -X POST http://localhost:8082/api/auth/message
+    -H 'Content-Type: application/json'
+    -d '{"name":"my_login","message":"history 10"}'
+    
+    
