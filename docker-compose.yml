@@ -7,13 +7,14 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: root
     ports:
-      - "5432:5432"
+      - "8081:5432"
 
   inside-demo:
+    build:
+      context: ./
+      dockerfile: Dockerfile
     container_name: inside-container
-    image: inside:demo
+    image: inside-demo:1
     ports:
-      - "8081:8081"
-    depends_on:
-      - postgres
+      - "8082:8082"
 
